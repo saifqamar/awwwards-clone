@@ -7,7 +7,7 @@ const HeroBody =() =>{
     return(
         <div>
             <img src={siteofd} className="py-5 w-full" alt="site of the day" />
-            <p className="text-xl pb-5">-<strong>Post Familiar Wine</strong>- Site of the Day - <strong>7.26</strong> - Jan 18, 2024 -</p>
+            <marquee className="text-xl pb-5">-<strong>Post Familiar Wine</strong>- Site of the Day - <strong>7.26</strong> - Jan 18, 2024 -</marquee>
             <div className="h-image aspect-[16/12] sm:aspect-auto rounded-lg overflow-hidden relative">
                 <img className="w-full h-full object-cover" src="https://assets.awwwards.com/awards/sites_of_the_day/2024/01/postfamiliar-cover.jpg" alt="" />
 

@@ -64,10 +64,6 @@ export default function TableDet(){
                     <td className="py-9 px-7 w-full flex justify-end"><button className="px-5 text-sm border border-aw-color h-10 rounded-lg hover:bg-black hover:text-white">View</button></td>
                 </tr>
 
-                
-
-                
-                
 
             </table> 
         </div>
