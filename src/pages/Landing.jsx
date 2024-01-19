@@ -5,6 +5,10 @@ import NomineeSec from "../components/nominee";
 import Academy from "../components/Academy";
 import Market from "../components/Market";
 import Directory from "../components/directory";
+import Elements from "../components/Elements";
+import Collections from "../components/Collections";
+import Recommendation from "../components/recommendations";
+import Footer from "../components/Footer";
 
 
 const LandingPage = () =>{
@@ -16,6 +20,10 @@ const LandingPage = () =>{
             <Academy />
             <Market />
             <Directory />
+            <Elements />
+            <Collections />
+            <Recommendation />
+            <Footer />
         </>
     )
 }
