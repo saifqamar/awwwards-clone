@@ -43,7 +43,7 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="foot-bottom pt-6 mb-24 flex flex-col lg:flex-row lg:justify-between">
+                <div className="foot-bottom border-1 boder-dotted pt-6 mb-24 flex flex-col lg:flex-row lg:justify-between">
                     <div className="flex text-sm py-1 font- gap-x-6">
                         <p>Cookies Policy</p>
                         <p>Cookies Policy</p>

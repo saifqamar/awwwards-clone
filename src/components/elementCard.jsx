@@ -5,8 +5,8 @@ export default function ElementCard(props){
     return(
         <div className="element-card ">
             <div className="main-element">
-                <div className="rounded-[16px] relative overflow-hidden">
-                    <video className="rounded[16px]" src={props.videoAdd}></video>
+                <div className="rounded-[16px] w-full relative overflow-hidden">
+                    <video className="rounded[16px] w-full" src={props.videoAdd}></video>
                     <div className="extras absolute px-4 pb-2 w-full bottom-2 flex justify-between gap-y-2 text-white">
                         <div className="left w-1/2">
                             <p>Element</p>
