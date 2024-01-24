@@ -12,11 +12,12 @@ export default function Directory(){
             <div className="w-full text-center mb-10">
                 <p className="text-base pb-4">Directory</p>
                 <div className="upper-div">
-                    <h1 className="text-5xl font-bold uppercase">W.Creators</h1>
+                    <h1 className="text-5xl sm:w-6xl md:text-7xl lg:text-9xl xl:text-[150px] 2xl:text-[180px]  font-bold uppercase">W.Creators</h1>
                 </div>
                 <p className="text-base sm:self-end pt-3">Active creators in your country</p>
             </div>
             <div className="directory-cards flex flex-col gap-y-5 md:flex-row md:gap-x-5">
+                <DirectoryCard />                
                 <DirectoryCard />                
                 <DirectoryCard />                
             </div>

@@ -7,14 +7,16 @@ import SecLink from "./secLink";
 export default function Elements(){
     return(
         <div className="">
-            <div className="px-6">
+            <div className="px-6 pb-12 sm:pb-16 md:pb-24 lg:pb-32 xl:pb-40 2xl:pb-48">
                 <div className="whole-sec px-10 lg:px-20 py-9 lg:py-20 rounded-[16px] bg-aw-color">
                     <h1 className="mb-2.5 text-center text-white">Inspirational elements</h1>
                     <h1 className="text-3xl lg:text-8xl uppercase lg:py-8 font-bold mb-8 text-center text-white">Element of <br /> the Day</h1>
 
                     <div className="element-cards flex flex-col gap-y-6">
+                        <div className="m-auto max-w-[1000px]">
+                            <ElementCard  isExtras={true} videoAdd={'https://assets.awwwards.com/awards/element/2024/01/659bccae7f52c684463396.mp4'}/>
+                        </div>
                         
-                        <ElementCard  isExtras={true} videoAdd={'https://assets.awwwards.com/awards/element/2024/01/659bccae7f52c684463396.mp4'}/>
 
                         <div className="discover pt-20">
                             <h1 className="mb-2.5 text-center text-white pb-7">Discover a huge selection of inspiring elements</h1>

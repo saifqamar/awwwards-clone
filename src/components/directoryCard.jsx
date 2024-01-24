@@ -5,7 +5,7 @@ import DirectorySlider from "./directorySlider";
 export default function DirectoryCard(){
 
     return(
-        <div className="directory-card academy-card bg-white w-full rounded-[12px] overflow-hidden">
+        <div className="directory-card academy-card bg-white w-full rounded-[12px] overflow-hidden md:last:hidden xl:last:block">
             <div className="whole-sec bg-aw-color p-6">
                 <div className="upper w-full flex space-between">
                     <img className="w-8 h-8 rounded-[50px] " src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/91066/597919b30ec0c.png" alt="" />
