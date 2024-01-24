@@ -6,7 +6,7 @@ import React from "react";
     prevBtn.innerHTML += 'Extra stuff';
     // console.log(prveBtn);
     return(
-        <div>
+        <div className="pb-16">
             <img className="rounded-lg" src="https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2024/01/659ef087a41bc827547067.png" alt="" />
             <div className="flex items-center gap-x-2 pt-6">
                 <p className="text-base font-bold">Nike x The Bauhaus</p>

@@ -91,8 +91,8 @@ export default function NavigationBar(){
 
                         {/* Main Nav Bar */}
                         <div className="below rounded-lg  w-auto flex flex-row gap-x-3 justify-between h-[60px]">
-                            <div className={isOpen ? "left bg-aw-color rounded-lg w-full md:w-full justify-around px-5 flex flex-row items-center gap-x-2 text-white"  : "left bg-aw-color rounded-lg w-[150px] md:w-full justify-around px-5 flex flex-row items-center gap-x-2 text-white" }> 
-                                <div className="left gap-x-2 w-full flex items-center w-12/12 justify-between">
+                            <div className={isOpen ? "left bg-aw-color rounded-lg w-full md:w-full justify-around px-5 flex flex-row items-center gap-x-2 text-white"  : "left bg-aw-color rounded-lg w-[140px] justify-around px-5 flex flex-row items-center gap-x-2 text-white" }> 
+                                <div className="left gap-x-2 w-full flex items-center  justify-between">
                                     <p className="font-semibold">w.home</p>
                                     <img className={isOpen ? 'hidden' : 'h-5 w-auto block cursor-pointer'} src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png" onClick={openNav} />
                                 </div>
@@ -101,23 +101,23 @@ export default function NavigationBar(){
                             
                             <div className={isOpen ? " links hidden right justify-between gap-x-2 rounded-lg bg-neutral-700 p-2" : "right md:flex justify-between gap-x-2 hidden md:w-10/12 rounded-lg bg-neutral-700 p-2"}>
                                 <a href="">
-                                    <p className="px-2 text-base font-semibold flex items-center border border-neutral-500 rounded-lg h-full text-neutral-400">Home</p>
+                                    <p className="px-2 text-base font-bold flex items-center rounded-lg h-full text-neutral-400">Home</p>
                                 </a>
 
                                 <a href="">
-                                    <p className="px-2 text-base font-semibold flex items-center border border-neutral-500 rounded-lg h-full text-neutral-400">SOTD</p>
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">SOTD</p>
                                 </a>
 
                                 <a href="">
-                                    <p className="px-2 text-base font-semibold flex items-center border border-neutral-500 rounded-lg h-full text-neutral-400">Nominees</p>
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Nominees</p>
                                 </a>
 
                                 <a href="">
-                                    <p className="px-2 text-base font-semibold flex items-center border border-neutral-500 rounded-lg h-full text-neutral-400">Directory</p>
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Directory</p>
                                 </a>
 
                                 <a href="">
-                                    <p className="px-2 text-base font-semibold flex items-center border border-neutral-500 rounded-lg h-full text-neutral-400">Collection</p>
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Collection</p>
                                 </a>
                                 
                             </div>

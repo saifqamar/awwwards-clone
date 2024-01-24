@@ -8,9 +8,9 @@ export default function DirectoryCard(){
         <div className="directory-card academy-card bg-white w-full rounded-[12px] overflow-hidden md:last:hidden xl:last:block">
             <div className="whole-sec bg-aw-color p-6">
                 <div className="upper w-full flex space-between">
-                    <img className="w-8 h-8 rounded-[50px] " src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/91066/597919b30ec0c.png" alt="" />
+                    <img className="w-8 h-8 lg:h-12 lg:w-12 rounded-[50px] " src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/91066/597919b30ec0c.png" alt="" />
                     <div className="grow"></div>
-                    <section className="w-3/6 aspect-[16/12]">
+                    <section className="w-3/6 h-[300px] aspect-[16/12]">
                         <DirectorySlider />
                         
                     </section>

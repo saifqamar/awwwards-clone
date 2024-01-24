@@ -12,7 +12,7 @@ export default function Directory(){
             <div className="w-full text-center mb-10">
                 <p className="text-base pb-4">Directory</p>
                 <div className="upper-div">
-                    <h1 className="text-5xl sm:w-6xl md:text-7xl lg:text-9xl xl:text-[150px] 2xl:text-[180px]  font-bold uppercase">W.Creators</h1>
+                    <h1 className="relative text-5xl sm:w-6xl md:text-7xl lg:text-9xl xl:text-[150px] 2xl:text-[180px] w-fit mx-auto font-bold uppercase">W.Creators <div className="tag text-blue-600 text-9xl normal-case w-fit absolute -bottom-[130%] xl:-bottom-[30%] -right-[5%] mx-auto px-3 py-3 rounded-lg origin-center -rotate-4">*</div></h1>
                 </div>
                 <p className="text-base sm:self-end pt-3">Active creators in your country</p>
             </div>

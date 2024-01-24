@@ -6,7 +6,9 @@ export default function ElementCard(props){
         <div className="element-card ">
             <div className="main-element">
                 <div className="rounded-[16px] w-full relative overflow-hidden">
-                    <video className="rounded[16px] w-full" src={props.videoAdd}></video>
+                    <video className="rounded[16px] w-full"  type="video/mp4"  muted paly loop autoPlay>
+                        <source src={props.videoAdd} type="video/mp4" />
+                    </video>
                     <div className="extras absolute px-4 pb-2 w-full bottom-2 flex justify-between gap-y-2 text-white">
                         <div className="left w-1/2">
                             <p>Element</p>

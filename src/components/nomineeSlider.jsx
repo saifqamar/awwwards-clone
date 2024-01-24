@@ -38,12 +38,10 @@ export default function NomineeSlider() {
 
          }
         }
-        pagination={{
-          clickable: true,
-        }}
+        
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Mousewheel, Keyboard]}
         
         className="mySwiper"
       > 
