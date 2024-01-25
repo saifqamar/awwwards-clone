@@ -4,8 +4,8 @@ import React from "react";
 export default function Footer(){
     return(
         <div className="px-6">
-            <div className="whole-footer">
-                <div className="mb-6 lg: mb-12">
+            <div className="whole-footer mt-12 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-40 2xl:mt-48">
+                <div className="mb-6 lg:mb-12">
                     <p className="font-bold text-lg pb-7">W.</p>
                     <div className="foot-wrap w-full flex flex-col gap-y-6 lg:flex-row ">
                         <div className="footer-grid grow grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">

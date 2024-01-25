@@ -6,7 +6,7 @@ import HeroBody from "./heroBody";
 const Hero = () =>{
     return(
         <div className="hero bg-aw-background">
-            <div className="px-6">
+            <div className="px-6" id="SOTD">
                 <Header />
                 <HeroBody />
             </div>

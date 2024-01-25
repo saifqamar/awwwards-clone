@@ -2,20 +2,20 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-export default function NavigationBar(){
+export default function NavigationBarPages(){
     const [isOpen , setIsOpen] = useState(false)
 
     const openNav = () =>{
-        setIsOpen(true)
+        setIsOpen(true);
     }
 
     const closeNav = () =>{
-        setIsOpen(false)
+        setIsOpen(false);
     }
 
     return(
         <div className="fixed bottom-2 lg:bottom-8 w-full z-50 px-5">
-                <div className="navigationBar mx-auto container w-auto md:w-[586px] md:min-w-[556px]">
+                <div className="navigationBar mx-auto container w-auto md:w-[586px] md:min-w-[756px]">
                     <div className={isOpen ? "trans-back w-auto md:w-auto mx-auto flex flex-col gap-y-3 p-3 rounded-xl bg-neutral-900 bg-opacity-50" : "trans-back w-fit md:w-auto mx-auto flex flex-col gap-y-3 p-3 rounded-xl bg-neutral-900 bg-opacity-50"}>
                         
                         {/* Options Menu */}
@@ -101,25 +101,33 @@ export default function NavigationBar(){
                                 <div className={isOpen ? "close text-white cursor-pointer" : "close text-white hidden"} onClick={closeNav}>x</div>
                             </div>
                             
-                            <div className={isOpen ? " links hidden right justify-between gap-x-2 rounded-lg bg-neutral-700 p-2" : "right md:flex justify-between gap-x-2 hidden md:w-10/12 rounded-lg bg-neutral-700 p-2"}>
+                            <div className={isOpen ? " links hidden right justify-between gap-x-2 rounded-lg bg-neutral-700 " : "right md:flex  hidden md:w-10/12 rounded-lg bg-neutral-700 "}>
                                 <a href="">
-                                    <p className="px-2 text-base font-bold flex items-center rounded-lg h-full text-neutral-400">Home</p>
+                                    <p className="px-2 text-base font-bold flex items-center rounded-lg h-full text-neutral-400">Filters</p>
                                 </a>
 
-                                <a href="#SOTD">
-                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">SOTD</p>
+                                <a href="#Awards">
+                                    <p className=" text-sm font-semibold flex items-center hover:bg-slate-600 h-full w-full text-neutral-400 px-4">Awards <span>i</span></p>
                                 </a>
 
-                                <a href="#Nominee">
-                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Nominees</p>
+                                <a href="#Popular">
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Popular <span>i</span></p>
                                 </a>
 
-                                <a href="#Directory">
-                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Directory</p>
+                                <a href="#Countries">
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Countries <span>i</span></p>
                                 </a>
 
-                                <a href="#Collection">
-                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Collection</p>
+                                <a href="#Font">
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Font <span>i</span></p>
+                                </a>
+
+                                <a href="#ColorCategories">
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Font <span>i</span></p>
+                                </a>
+
+                                <a href="#Categories">
+                                    <p className="px-2 text-sm font-semibold flex items-center border border-neutral-500 hover:border-neutral-300 rounded-lg h-full text-neutral-400">Font <span>i</span></p>
                                 </a>
                                 
                             </div>

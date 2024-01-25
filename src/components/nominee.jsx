@@ -5,7 +5,7 @@ import SecLink from "./secLink";
 
 const NomineeSec = () => {
     return(
-        <div className="nominee">
+        <div className="nominee" id="Nominee">
             <div className="px-6 pt-12 sm:pt-16 md:pt-24 lg:pt-32 xl:pt-40 2xl:pt-48">
                 <div className="w-full text-center mb-6 sm:mb-10 md:mb-14 xl:mb-16 2xl:mb-20 ">
                     <p className="text-base pb-4">Latest</p>

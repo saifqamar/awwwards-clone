@@ -1,6 +1,11 @@
+*{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
   background: #f8f8f8;
+  
 }
 
 .nominee-cards .swiper .swiper-button-next, .nominee-cards .swiper .swiper-button-prev{

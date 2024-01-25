@@ -8,12 +8,14 @@ import Directory from "../components/directory";
 import Elements from "../components/Elements";
 import Collections from "../components/Collections";
 import Recommendation from "../components/recommendations";
+import NavigationBar from "../components/navigationBar";
 import Footer from "../components/Footer";
 
 
 const LandingPage = () =>{
     return(
         <>
+            <NavigationBar />
             <Hero />
             <News />
             <NomineeSec />
@@ -23,7 +25,7 @@ const LandingPage = () =>{
             <Elements />
             <Collections />
             <Recommendation />
-            <Footer />
+            
         </>
     )
 }

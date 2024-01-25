@@ -6,7 +6,7 @@ export default function Recommendation(){
     return(
         <div className="">
             <div className="px-6">
-                <div className="whole-sec mb-12 sm:mb-16 md:mb-24 lg:mb-32 xl:mb-40 2xl:mb-48">
+                <div className="whole-sec">
 
                     <div className="rec-cards flex flex-col  gap-y-5 lg:flex-row lg:gap-x-5">
                         <div className="rec-card w-full h-80 min-h-80 max-h-[580px] lg:h-auto relative">
