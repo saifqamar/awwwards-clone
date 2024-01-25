@@ -202,7 +202,7 @@ export default function NavigationBarPages(){
                         <div className="below rounded-lg w-auto flex flex-row gap-x-2 h-[60px]">
                             <div className={isOpen ? "left bg-aw-color rounded-lg w-full md:w-full justify-around px-5 flex flex-row items-center gap-x-2 text-white"  : "left bg-aw-color rounded-lg w-[200px] justify-around px-5 flex flex-row items-center gap-x-2 text-white" }> 
                                 <div className="left gap-x-2 w-full flex items-center  justify-between">
-                                    <p className="font-semibold flex">w. <span className="text-yellow-500">awards.</span> <span className="font-regular">SOTMs</span></p>
+                                    <p className="font-semibold flex">w. <span className="text-yellow-500">awards.</span> <span className="font-light text-neutral-400">SOTMs</span></p>
                                     <img className={isOpen ? 'hidden' : 'h-5 w-auto block cursor-pointer'} src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png" onClick={openNav} />
                                 </div>
                                 <div className={isOpen ? "close text-white cursor-pointer" : "close text-white hidden"} onClick={closeNav}>x</div>

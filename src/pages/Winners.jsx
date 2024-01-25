@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/header";
 import WinnerCard from "../components/winnerCard";
 import Pagination from "../components/pagination";
+import NavigationBarPages from "../components/navigationBarPages";
 
 
 
@@ -11,7 +12,7 @@ export default function Winners(){
         <div className="Winners ">
             <div className="px-6" id="SOTD">
                 <Header />
-
+                <NavigationBarPages />
                 <div className="whole-sec">
                     <div className="headings my-7 sm:my-9 md:my-10 lg:my-12 xl:my-14 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-1">
                         <h1 className="text-3xl font-semibold">Winning websites</h1>
