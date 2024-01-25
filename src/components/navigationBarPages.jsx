@@ -9,7 +9,7 @@ export default function NavigationBarPages(){
     const [isPopularNavOpen, setIsPopularNavOpen] = useState(false)
 
 
-
+    
     const openNav = () =>{
         setIsOpen(true);
         setIsPageNavOpen(false);
@@ -25,6 +25,12 @@ export default function NavigationBarPages(){
         setIsPopularNavOpen(false);
     }
 
+    const PopularOpen = ()=>{
+        setIsPageNavOpen(false);
+        setIsOpen(false);
+        setIsPopularNavOpen(!isPopularNavOpen);
+    }
+
 
 
     return(
@@ -33,7 +39,7 @@ export default function NavigationBarPages(){
                     <div className={isOpen ? "trans-back w-full lg:w-auto mx-auto flex flex-col gap-y-3 p-1.5 rounded-xl bg-neutral-900 bg-opacity-50" : "trans-back w-fit lg:w-auto mx-auto flex flex-col gap-y-3 p-1.5 rounded-xl bg-neutral-900 bg-opacity-50"}>
                         
                         {/* Options Menu */}
-                        <div className={isOpen ? "above h-[600px] md:h-auto overflow-y-scroll w-full flex flex-col md:flex-row justify-between bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
+                        <div className={isOpen ? "above h-[600px] md:h-auto overflow-y-scroll md:overflow-auto w-full flex flex-col md:flex-row justify-between bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
                             <div className="whole-sec">
                                 <p className="text-neutral-400 pl-3 pb-3 border-b-2 border-neutral-400 -ml-3.5 mb-6 text-xs list-disc">Awards</p>
                                 
@@ -107,7 +113,7 @@ export default function NavigationBarPages(){
                         </div>
 
                         {/* First Page Nav Options Menu */}
-                        <div className={isPageNavOpen ? "above h-[600px] md:h-auto overflow-y-scroll w-full bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
+                        {/* <div className={isPageNavOpen ? "above h-[600px] md:h-auto overflow-y-scroll w-full bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
                             
                             <p className="text-neutral-500  pb-3 border-b border-neutral-600 mb-6 text-xs list-disc">Awards</p>
 
@@ -138,11 +144,13 @@ export default function NavigationBarPages(){
                             </div>
 
                             
-                        </div>
+                        </div> */}
+                        <PageNavMenu isAwardNavOpen={isPageNavOpen} />
                          
                          {/* Second Nav Option */}
+                        <PageNavMenu isPopularNavOpen={isPopularNavOpen} />
 
-                         <div className={isPopularNavOpen ? "above h-[600px] md:h-auto overflow-y-scroll w-full bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
+                         {/* <div className={isPopularNavOpen ? "above h-[600px] md:h-auto overflow-y-scroll w-full bg-aw-color rounded-lg p-6 " : "hidden above  flex-row justify-between bg-aw-color rounded-lg p-4 "}>
                             
                             <div className="w-full h-full mb-4 relative grow">
                                 <p className="absolute inset-y-0 top-3 right-4 text-neutral-400">
@@ -183,8 +191,9 @@ export default function NavigationBarPages(){
                             </div>
 
                             
-                        </div>
+                        </div> */}
 
+                    
 
                         {/* Main Nav Bar */}
                         <div className="below rounded-lg  w-auto flex flex-row gap-x-2 justify-between h-[60px]">
@@ -225,13 +234,7 @@ export default function NavigationBarPages(){
                                 </a>
 
                                 <a href="#Popular">
-                                    <p onClick={() => {
-                                        setIsPopularNavOpen(!isPopularNavOpen);
-                                        if(isPopularNavOpen){
-                                            setIsPageNavOpen(false);
-                                            setIsOpen(false)
-                                        }
-                                    }} className={isPopularNavOpen ? " text-sm font-semibold flex items-center bg-neutral-800 h-full w-full text-neutral-400 px-3" : " text-sm font-semibold flex items-center px-3 hover:bg-neutral-800 h-full w-full text-neutral-400"}>
+                                    <p onClick={PopularOpen} className={isPopularNavOpen ? " text-sm font-semibold flex items-center bg-neutral-800 h-full w-full text-neutral-400 px-3" : " text-sm font-semibold flex items-center px-3 hover:bg-neutral-800 h-full w-full text-neutral-400"}>
                                         Popular 
                                     {isPopularNavOpen ? 
 
