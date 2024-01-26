@@ -20,8 +20,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/winners" element={<Winners />} />
           <Route path="/nominee" element={<NomineePage />} />
-          <Route path="/sotd" element={<SOTDPage />} />
-          <Route path="/sotm" element={<SOTMPage />} />
+          <Route path="/SOTD" element={<SOTDPage />} />
+          <Route path="/SOTM" element={<SOTMPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import PageNavMenu from "./Navs/PageNavMenu";
+import { useLocation } from "react-router-dom";
 
 export default function NavigationBarPages(){
     const [isOpen , setIsOpen] = useState(false)
@@ -12,11 +13,22 @@ export default function NavigationBarPages(){
     const [isColorNavOpen, setIsColorNavOpen] = useState(false)
     const [isCatNavOpen, setIsCatNavOpen] = useState(false)
 
+    let location = useLocation();
+    console.log(location)
+    
+    let sLoc = location.pathname.slice(1, location.length)
+    
+
+
 
     
     const openNav = () =>{
         setIsOpen(true);
         setIsPageNavOpen(false);
+        setIsPopularNavOpen(false);
+        setCountryNavOpen(false);
+        setIsColorNavOpen(false);
+        setIsCatNavOpen(false);
     }
 
     const closeNav = () =>{
@@ -106,8 +118,8 @@ export default function NavigationBarPages(){
                                 <div className="all flex flex-col text-white ">
                                     <Link to="/winners" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Winners</Link>
                                     <Link to="/nominee" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Nominees</Link>
-                                    <Link to="/sotd" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Sites of day</Link>
-                                    <Link to="/sotm" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Site of Month</Link>
+                                    <Link to="/SOTD" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Sites of day</Link>
+                                    <Link to="/SOTM" className="pt-2 pb-2 pl-3 mb-4 text-sm border-neutral-800 hover:border-l hover:transition-all hover:duration-200 hover:border-lime-600">Site of Month</Link>
                                 </div>
                             </div>
 
@@ -202,7 +214,7 @@ export default function NavigationBarPages(){
                         <div className="below rounded-lg w-auto flex flex-row gap-x-2 h-[60px]">
                             <div className={isOpen ? "left bg-aw-color rounded-lg w-full md:w-full justify-around px-5 flex flex-row items-center gap-x-2 text-white"  : "left bg-aw-color rounded-lg w-[200px] justify-around px-5 flex flex-row items-center gap-x-2 text-white" }> 
                                 <div className="left gap-x-2 w-full flex items-center  justify-between">
-                                    <p className="font-semibold flex">w. <span className="text-yellow-500">awards.</span> <span className="font-light text-neutral-400">SOTMs</span></p>
+                                    <p className="font-semibold flex">w. <span className="text-yellow-500">awards.</span> <span className="font-light text-neutral-400">{sLoc}</span></p>
                                     <img className={isOpen ? 'hidden' : 'h-5 w-auto block cursor-pointer'} src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png" onClick={openNav} />
                                 </div>
                                 <div className={isOpen ? "close text-white cursor-pointer" : "close text-white hidden"} onClick={closeNav}>x</div>

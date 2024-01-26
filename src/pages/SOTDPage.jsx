@@ -3,9 +3,13 @@ import WinnerCard from "../components/winnerCard";
 import Header  from "../components/header";
 import Pagination from "../components/pagination";
 import NavigationBarPages from "../components/navigationBarPages";
+import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 
 export default function SOTDPage(){
+    
     return(
         <div className="Winners ">
             <div className="px-6">

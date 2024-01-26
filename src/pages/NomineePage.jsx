@@ -8,10 +8,12 @@ import NavigationBarPages from "../components/navigationBarPages";
 export default function NomineePage(){
     return(
         <div className="Winners ">
+                <div className="fixed w-full bg-white z-50 px-6 top-0">
+                    <Header />
+                </div>
             <div className="px-6" id="SOTD">
-                <Header />
                 <NavigationBarPages />
-                <div className="whole-sec">
+                <div className="whole-sec pt-12">
                     <div className="headings my-7 sm:my-9 md:my-10 lg:my-12 xl:my-14 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-1">
                         <h1 className="text-3xl font-semibold">Nominee websites</h1>
                         <p className="text-base leading-[190%]">Website design inspiration. Discover the best website designs of the world.

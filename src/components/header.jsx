@@ -16,6 +16,15 @@ const Header = () =>{
                         </svg>
                     </p> 
                     <input className="w-full py-3 bg-gray-300 px-12 rounded-lg" type="text" placeholder="Search in Inspiration" />
+                    <div className="sec-drpdown absolute right-0 top-0 h-full flex rounded-lg ">
+                        <select name="" id="cars" className="options w-[200px] px-3 bg-gray-300 hover:bg-aw-color hover:text-white overflow-hidden rounded-lg ">
+                            <option value="None">Website</option>
+                            <option value="15 days">15 days</option>
+                            <option value="1 month">1 month</option>
+                            <option value="3 months">3 months</option>
+                            <option value="6 months or more">6 months or more</option>
+                        </select>
+                    </div>
                 </div>
                 <div className="hidden sm:flex pl-2 gap-x-3 w-2/12">
                     <a href="" className="font-semibold text-sm w-14">Log in</a>

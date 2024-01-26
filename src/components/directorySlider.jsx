@@ -27,7 +27,7 @@ export default function DirectorySlider() {
         className="mySwiper directorySwiper"
       >
         <SwiperSlide>
-          <img className='rounded-[10px] h-[200px] object-cover aspect-[16/12]' src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img className='rounded-[10px] h-[200px] w-full object-cover' src="https://swiperjs.com/demos/images/nature-1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
